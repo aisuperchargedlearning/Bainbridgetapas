@@ -129,8 +129,8 @@ img {
 }
 
 .navbar {
-  background-color: rgba(0, 0, 0, 0);
-  background-image: linear-gradient(rgba(0, 0, 0, .33), rgba(0, 0, 0, 0) 99%);
+  background-color: #0000;
+  background-image: linear-gradient(#00000054, #0000 99%);
   padding-top: 17px;
   padding-bottom: 17px;
   position: absolute;
@@ -158,7 +158,7 @@ img {
 
 .menu-button {
   float: right;
-  color: rgba(255, 255, 255, .85);
+  color: #ffffffd9;
   border-radius: 2px;
   margin-top: 0;
   padding: 10px 8px 9px;
@@ -168,11 +168,11 @@ img {
 
 .menu-button:hover {
   color: #fff;
-  background-color: rgba(255, 255, 255, .1);
+  background-color: #ffffff1a;
 }
 
 .menu-button.w--open {
-  background-color: rgba(255, 255, 255, .25);
+  background-color: #ffffff40;
 }
 
 .long-text {
@@ -194,7 +194,7 @@ img {
 }
 
 .hero-subheading {
-  color: rgba(255, 255, 255, .63);
+  color: #ffffffa1;
   background-color: #642727;
   margin-top: 49px;
   margin-bottom: 15px;
@@ -257,12 +257,12 @@ img {
   display: block;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, .09);
+  box-shadow: 0 0 0 1px #00000017;
 }
 
 .thumbnail-wrapper:hover {
   transform: translate(0, -3px);
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, .09), 0 2px 23px rgba(0, 0, 0, .09);
+  box-shadow: 0 0 0 1px #00000017, 0 2px 23px #00000017;
 }
 
 .blog-title {
@@ -316,7 +316,7 @@ img {
 }
 
 .thumbnail-date.lite {
-  color: rgba(255, 255, 255, .7);
+  color: #ffffffb3;
   font-size: 12px;
 }
 
@@ -356,7 +356,7 @@ img {
 }
 
 .author-title.lite {
-  color: rgba(255, 255, 255, .7);
+  color: #ffffffb3;
   font-size: 12px;
 }
 
@@ -404,7 +404,7 @@ img {
 }
 
 .submit-button {
-  background-color: rgba(255, 255, 255, .28);
+  background-color: #ffffff47;
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
   width: 25%;
@@ -418,15 +418,15 @@ img {
 }
 
 .footer-section {
-  background-color: rgba(35, 47, 56, .6);
-  border-top: 1px solid rgba(255, 255, 255, .12);
+  background-color: #232f3899;
+  border-top: 1px solid #ffffff1f;
   padding-top: 27px;
   padding-bottom: 27px;
 }
 
 .footer-link {
   float: none;
-  color: rgba(255, 255, 255, .6);
+  color: #fff9;
   letter-spacing: 1px;
   text-transform: uppercase;
   padding: 3px 0 3px 20px;
@@ -468,7 +468,7 @@ img {
 }
 
 .featured-text {
-  background-image: linear-gradient(rgba(0, 0, 0, .03), rgba(0, 0, 0, .6) 46%, rgba(0, 0, 0, .76));
+  background-image: linear-gradient(#00000008, #0009 46%, #000000c2);
   padding: 60px 20px 62px;
   position: absolute;
   bottom: 0;
@@ -503,7 +503,7 @@ img {
 }
 
 .featured-description {
-  color: rgba(255, 255, 255, .7);
+  color: #ffffffb3;
   text-align: left;
   padding-right: 44px;
   font-family: Oxygen, sans-serif;
@@ -528,10 +528,7 @@ img {
   margin-top: 0;
   margin-bottom: 0;
   position: static;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  inset: 0;
 }
 
 .blog-date {
@@ -747,7 +744,7 @@ img {
 }
 
 .view-all {
-  color: rgba(255, 255, 255, .6);
+  color: #fff9;
   margin-bottom: 13px;
   padding-left: 18px;
   padding-right: 18px;
@@ -806,10 +803,7 @@ img {
   height: 100%;
   transition: background-color .4s;
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  inset: 0;
 }
 
 .footer-links {
@@ -825,7 +819,7 @@ img {
 .category-thumbnail {
   color: #fff;
   text-align: center;
-  text-shadow: 1px 1px 6px rgba(0, 0, 0, .39);
+  text-shadow: 1px 1px 6px #00000063;
   background-image: url('https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg');
   background-position: 50%;
   background-size: cover;
@@ -1023,7 +1017,7 @@ img {
 }
 
 .shadow-two {
-  box-shadow: 0 4px 24px rgba(150, 163, 181, .08);
+  box-shadow: 0 4px 24px #96a3b514;
 }
 
 .margin-bottom-24px {
@@ -1115,7 +1109,7 @@ img {
 }
 
 .shadow-two-2 {
-  box-shadow: 0 4px 24px rgba(150, 163, 181, .08);
+  box-shadow: 0 4px 24px #96a3b514;
 }
 
 .margin-bottom-24px-2 {
@@ -1218,10 +1212,7 @@ img {
   .featured-text {
     padding-top: 70px;
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    inset: 0;
   }
 
   .featured-title {
@@ -1313,10 +1304,7 @@ img {
   }
 
   .featured-text {
-    top: auto;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    inset: auto 0 0;
   }
 
   .featured-title {
@@ -1570,7 +1558,7 @@ img {
   }
 
   .nav-menu {
-    background-color: rgba(35, 47, 56, .92);
+    background-color: #232f38eb;
     width: 100%;
     padding-top: 60px;
     display: block;
