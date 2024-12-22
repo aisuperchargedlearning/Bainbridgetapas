@@ -1,6 +1,7 @@
 import React from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
+import { TapasEvents } from './components/TapasEvents';
 import { About } from './components/About';
 import { Menu } from './components/Menu';
 import { Reviews } from './components/Reviews';
@@ -13,6 +14,7 @@ function App() {
       <Navbar />
       <Hero />
       <div className="max-w-[1400px] mx-auto px-4">
+        <TapasEvents />
         <Menu />
         <About />
         <Reviews />
