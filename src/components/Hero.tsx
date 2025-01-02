@@ -34,7 +34,7 @@ export const Hero = () => {
             activeImage === index ? 'opacity-100' : 'opacity-0'
           }`}
         >
-          <div className="absolute inset-0 bg-black/40 z-10"></div>
+          <div className="absolute inset-0 bg-black/30 z-10"></div>
           <img
             src={image}
             alt={`Restaurant ambiance ${index + 1}`}
@@ -48,13 +48,13 @@ export const Hero = () => {
       {/* Content */}
       <div className="relative z-20 max-w-[1400px] mx-auto px-4">
         <div className="max-w-3xl">
-          <p className="text-amber-500 uppercase tracking-[0.2em] mt-4 mb-6 text-shadow-sm">The Spanish Experience</p>
-          <h1 className="text-6xl md:text-7xl lg:text-8xl font-light mb-8 leading-tight text-shadow-lg mix-blend-overlay opacity-80">
+          <p className="text-amber-500 uppercase tracking-[0.2em] mb-4">The Spanish Experience</p>
+          <h1 className="text-6xl md:text-7xl lg:text-8xl font-light mb-8 leading-tight">
             Authentic
             <br />
             <span className="font-medium">Spanish Tapas</span>
           </h1>
-          <p className="text-xl md:text-2xl text-gray-300 mb-12 leading-relaxed max-w-2xl text-shadow-sm">
+          <p className="text-xl md:text-2xl text-gray-300 mb-12 leading-relaxed max-w-2xl">
             Discover the Essence of Spanish Cuisine at the Heart of Bainbridge Island
           </p>
           <button 
