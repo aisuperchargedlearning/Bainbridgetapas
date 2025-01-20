@@ -22,7 +22,7 @@ function App() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="w-full">
               <img 
-                src="https://ik.imagekit.io/a7tech/Tapas%20images/tapas%20valentines%20post.jpg"
+                src="https://ik.imagekit.io/a7tech/Tapas%20images/Tapas%20event%202.jpg?updatedAt=1737398618482"
                 alt="Valentine's Day Musical Event"
                 className="w-full h-auto rounded-lg shadow-xl"
               />
