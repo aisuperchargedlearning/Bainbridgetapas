@@ -3,7 +3,7 @@ import React from 'react';
 interface MenuItem {
   name: string;
   description: string;
-  price: string | number;
+  price?: string | number;
 }
 
 interface MenuSection {
@@ -16,25 +16,25 @@ export const Menu: React.FC = () => {
     {
       title: "Cold Tapas",
       items: [
-        { name: "Ensalada Griega", description: "Traditional Greek salad", price: 11 },
-        { name: "Hummus", description: "Served with pita", price: 9 },
-        { name: "Jamón Serrano", description: "Fermín ham, bread, tomato pulp", price: 12 },
-        { name: "Olives Medley", description: "Manzanilla, Castelvetrano, Cerignola, herbs", price: 7 },
-        { name: "Manchego & Membrillo", description: "Quince paste, olive oil, bread", price: 10 },
-        { name: "Boquerones", description: "Spanish anchovies, olive oil, tomatoes, bread", price: 9 }
+        { name: "Ensalada Griega", description: "Traditional Greek salad" },
+        { name: "Hummus", description: "Served with pita" },
+        { name: "Jamón Serrano", description: "Fermín ham, bread, tomato pulp" },
+        { name: "Olives Medley", description: "Manzanilla, Castelvetrano, Cerignola, herbs" },
+        { name: "Manchego & Membrillo", description: "Quince paste, olive oil, bread" },
+        { name: "Boquerones", description: "Spanish anchovies, olive oil, tomatoes, bread" }
       ]
     },
     {
       title: "Hot Tapas",
       items: [
-        { name: "Cauliflower", description: "Roasted cauliflower, lime, herbs, bread", price: 13 },
-        { name: "Wild Mushrooms Cazuela", description: "Fresh local wild mushrooms, garlic, sherry, bread", price: 15 },
-        { name: "Gambas al Ajillo", description: "Garlic shrimp, paprika, sherry, bread", price: 17 },
-        { name: "Falafitas", description: "Garbanzo patties, tzatziki", price: 15 },
-        { name: "Lamb Chops", description: "Roasted potatoes, harissa sauce", price: 18 },
-        { name: "Patatas Bravas", description: "Roasted potatoes, brava sauce, aioli", price: 9 },
-        { name: "Clams con Chorizo", description: "Fresh clams, chorizo, brava sauce, bread", price: 16 },
-        { name: "Pumpkin Soup", description: "Roasted carrots, Moroccan spices, bread", price: 10 }
+        { name: "Cauliflower", description: "Roasted cauliflower, lime, herbs, bread" },
+        { name: "Wild Mushrooms Cazuela", description: "Fresh local wild mushrooms, garlic, sherry, bread" },
+        { name: "Gambas al Ajillo", description: "Garlic shrimp, paprika, sherry, bread" },
+        { name: "Falafitas", description: "Garbanzo patties, tzatziki" },
+        { name: "Lamb Chops", description: "Roasted potatoes, harissa sauce" },
+        { name: "Patatas Bravas", description: "Roasted potatoes, brava sauce, aioli" },
+        { name: "Clams con Chorizo", description: "Fresh clams, chorizo, brava sauce, bread" },
+        { name: "Pumpkin Soup", description: "Roasted carrots, Moroccan spices, bread" }
       ]
     }
   ];
@@ -42,18 +42,15 @@ export const Menu: React.FC = () => {
   const perUnitItems = [
     {
       name: "Empanadas",
-      description: "Ground beef, four cheese, harissa",
-      prices: { one: 7, two: 13, three: 18 }
+      description: "Ground beef, four cheese, harissa"
     },
     {
       name: "Pincho de Carne",
-      description: "Small meat skewer, mojo verde",
-      prices: { one: 8, two: 14, three: 19 }
+      description: "Small meat skewer, mojo verde"
     },
     {
       name: "Spanakopita",
-      description: "Spinach, feta cheese, phyllo dough, tzatziki sauce",
-      prices: { one: 7, two: 13, three: 18 }
+      description: "Spinach, feta cheese, phyllo dough, tzatziki sauce"
     }
   ];
 
@@ -77,7 +74,6 @@ export const Menu: React.FC = () => {
                     <h4 className="text-xl text-white mb-2">{item.name}</h4>
                     <p className="text-gray-400">{item.description}</p>
                   </div>
-                  <span className="text-amber-500 ml-4">${item.price}</span>
                 </div>
               ))}
             </div>
@@ -93,9 +89,6 @@ export const Menu: React.FC = () => {
                   <h4 className="text-xl text-white">{item.name}</h4>
                 </div>
                 <p className="text-gray-400 mb-2">{item.description}</p>
-                <div className="text-amber-500">
-                  One: ${item.prices.one} | Two: ${item.prices.two} | Three: ${item.prices.three}
-                </div>
               </div>
             ))}
           </div>
@@ -113,7 +106,6 @@ export const Menu: React.FC = () => {
             <li>• Paella Mixta</li>
             <li>• Churros</li>
           </ul>
-          <p className="text-amber-500">Price: $99 (for 2) / $149 (for 4)</p>
         </div>
       </div>
     </section>
