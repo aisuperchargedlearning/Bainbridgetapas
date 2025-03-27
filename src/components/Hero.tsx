@@ -48,18 +48,18 @@ export const Hero = () => {
       {/* Content */}
       <div className="relative z-20 max-w-[1400px] mx-auto px-4">
         <div className="max-w-3xl">
-          <p className="text-amber-500 uppercase tracking-[0.2em] mb-4">The Spanish Experience</p>
-          <h1 className="text-6xl md:text-7xl lg:text-8xl font-light mb-8 leading-tight">
+          <p className="text-amber-500 uppercase tracking-[0.2em] mb-4 text-base md:text-lg">The Spanish Experience</p>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light mb-8 leading-tight">
             Authentic
             <br />
             <span className="font-medium">Spanish Tapas</span>
           </h1>
-          <p className="text-xl md:text-2xl text-gray-300 mb-12 leading-relaxed max-w-2xl">
+          <p className="text-lg sm:text-xl md:text-2xl text-gray-300 mb-12 leading-relaxed max-w-2xl">
             Discover the Essence of Spanish Cuisine at the Heart of Bainbridge Island
           </p>
           <button 
             onClick={scrollToMenu}
-            className="bg-amber-500 text-black px-12 py-4 rounded-none hover:bg-amber-400 transition-colors duration-300 flex items-center justify-center gap-2 text-sm uppercase tracking-wider font-medium"
+            className="bg-amber-500 text-black px-8 sm:px-12 py-4 rounded-none hover:bg-amber-400 transition-colors duration-300 flex items-center justify-center gap-2 text-sm uppercase tracking-wider font-medium"
           >
             View Menu <ArrowRight size={20} />
           </button>

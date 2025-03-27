@@ -1,111 +1,160 @@
 import React from 'react';
 
-interface MenuItem {
-  name: string;
-  description: string;
-  price?: string | number;
-}
-
-interface MenuSection {
-  title: string;
-  items: MenuItem[];
-}
-
-export const Menu: React.FC = () => {
-  const menuSections: MenuSection[] = [
-    {
-      title: "Cold Tapas",
-      items: [
-        { name: "Ensalada Griega", description: "Traditional Greek salad" },
-        { name: "Hummus", description: "Served with pita" },
-        { name: "Jamón Serrano", description: "Fermín ham, bread, tomato pulp" },
-        { name: "Olives Medley", description: "Manzanilla, Castelvetrano, Cerignola, herbs" },
-        { name: "Manchego & Membrillo", description: "Quince paste, olive oil, bread" },
-        { name: "Boquerones", description: "Spanish anchovies, olive oil, tomatoes, bread" }
-      ]
-    },
-    {
-      title: "Hot Tapas",
-      items: [
-        { name: "Cauliflower", description: "Roasted cauliflower, lime, herbs, bread" },
-        { name: "Wild Mushrooms Cazuela", description: "Fresh local wild mushrooms, garlic, sherry, bread" },
-        { name: "Gambas al Ajillo", description: "Garlic shrimp, paprika, sherry, bread" },
-        { name: "Falafitas", description: "Garbanzo patties, tzatziki" },
-        { name: "Lamb Chops", description: "Roasted potatoes, harissa sauce" },
-        { name: "Patatas Bravas", description: "Roasted potatoes, brava sauce, aioli" },
-        { name: "Clams con Chorizo", description: "Fresh clams, chorizo, brava sauce, bread" },
-        { name: "Pumpkin Soup", description: "Roasted carrots, Moroccan spices, bread" }
-      ]
-    }
-  ];
-
-  const perUnitItems = [
-    {
-      name: "Empanadas",
-      description: "Ground beef, four cheese, harissa"
-    },
-    {
-      name: "Pincho de Carne",
-      description: "Small meat skewer, mojo verde"
-    },
-    {
-      name: "Spanakopita",
-      description: "Spinach, feta cheese, phyllo dough, tzatziki sauce"
-    }
-  ];
-
+export const Menu = () => {
   return (
     <section id="menu" className="py-24 bg-[#1A1A1A]">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-5xl font-light mb-6 text-white">Our Menu</h2>
-          <p className="text-amber-500 uppercase tracking-[0.2em]">Tapas & Vinos</p>
+          <h2 className="text-5xl font-light mb-6 text-white">BAINBRIDGE TAPAS</h2>
+          <p className="text-amber-500 uppercase tracking-[0.2em]">TAPAS & VINOS</p>
           <p className="text-gray-400 mt-4">Tapas are served as they're ready</p>
           <div className="w-16 h-[1px] bg-amber-500 mx-auto mt-8"></div>
         </div>
 
-        {menuSections.map((section, index) => (
-          <div key={index} className="mb-16">
-            <h3 className="text-3xl font-light mb-8 text-white">{section.title}</h3>
-            <div className="grid gap-8">
-              {section.items.map((item, itemIndex) => (
-                <div key={itemIndex} className="flex justify-between items-baseline border-b border-gray-800 pb-4">
-                  <div>
-                    <h4 className="text-xl text-white mb-2">{item.name}</h4>
-                    <p className="text-gray-400">{item.description}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        ))}
-
+        {/* Cold Tapas */}
         <div className="mb-16">
-          <h3 className="text-3xl font-light mb-8 text-white">Tapas Per Unit</h3>
-          <div className="grid gap-8">
-            {perUnitItems.map((item, index) => (
-              <div key={index} className="border-b border-gray-800 pb-4">
-                <div className="flex justify-between items-baseline mb-2">
-                  <h4 className="text-xl text-white">{item.name}</h4>
-                </div>
-                <p className="text-gray-400 mb-2">{item.description}</p>
+          <h3 className="text-3xl font-light mb-8 text-white text-center uppercase border-b border-gray-800 pb-4">Cold Tapas</h3>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="space-y-6">
+              <div>
+                <h4 className="text-xl text-amber-500 mb-2">ENSALADA GRIEGA</h4>
+                <p className="text-gray-400 italic">Traditional Greek salad.</p>
               </div>
-            ))}
+              <div>
+                <h4 className="text-xl text-amber-500 mb-2">MANCHEGO & MEMBRILLO</h4>
+                <p className="text-gray-400 italic">Quince paste, olive oil, bread.</p>
+              </div>
+              <div>
+                <h4 className="text-xl text-amber-500 mb-2">HUMMUS</h4>
+                <p className="text-gray-400 italic">Served with warm pita.</p>
+              </div>
+            </div>
+            <div className="space-y-6">
+              <div>
+                <h4 className="text-xl text-amber-500 mb-2">BOQUERONES</h4>
+                <p className="text-gray-400 italic">Spanish anchovies, olive oil, tomatoes, bread</p>
+              </div>
+              <div>
+                <h4 className="text-xl text-amber-500 mb-2">JAMON SERRANO</h4>
+                <p className="text-gray-400 italic">Fermin ham, bread, tomato pulp.</p>
+              </div>
+              <div>
+                <h4 className="text-xl text-amber-500 mb-2">OLIVES MEDLEY</h4>
+                <p className="text-gray-400 italic">Manzanilla, castelvetrano, cerignola, herbs.</p>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div className="bg-[#2A2A2A] p-8 rounded-lg">
-          <h3 className="text-3xl font-light mb-6 text-white">Tour de España</h3>
-          <p className="text-gray-400 mb-4">For 2 or 4 people</p>
-          <ul className="text-gray-400 mb-6 space-y-2">
-            <li>• Pumpkin Soup</li>
-            <li>• Olives Medley</li>
-            <li>• Jamón Serrano</li>
-            <li>• Empanadas</li>
-            <li>• Patatas Bravas</li>
-            <li>• Paella Mixta</li>
-            <li>• Churros</li>
-          </ul>
+        {/* Tapas Per Unit */}
+        <div className="mb-16">
+          <h3 className="text-3xl font-light mb-8 text-white text-center uppercase border-b border-gray-800 pb-4">Tapas Per Unit</h3>
+          <div className="grid grid-cols-4 mb-4">
+            <div></div>
+            <div className="text-center font-bold text-white">ONE</div>
+            <div className="text-center font-bold text-white">TWO</div>
+            <div className="text-center font-bold text-white">THREE</div>
+          </div>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="space-y-6">
+              <div>
+                <h4 className="text-xl text-amber-500 mb-2">EMPANADAS</h4>
+                <p className="text-gray-400 italic">Ground beef, four cheese, harissa.</p>
+              </div>
+              <div>
+                <h4 className="text-xl text-amber-500 mb-2">PINCHO MORUNO*</h4>
+                <p className="text-gray-400 italic">Pork skewer, blue cheese sauce.</p>
+              </div>
+            </div>
+            <div className="space-y-6">
+              <div>
+                <h4 className="text-xl text-amber-500 mb-2">SPANAKOPITA</h4>
+                <p className="text-gray-400 italic">Spinach, feta cheese, phyllo dough, tzatziki sauce.</p>
+              </div>
+              <div>
+                <h4 className="text-xl text-amber-500 mb-2">LAMB MINI PITAS</h4>
+                <p className="text-gray-400 italic">Braised lamb, onion, harissa, feta.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Platos */}
+        <div className="mb-16">
+          <h3 className="text-3xl font-light mb-8 text-white text-center uppercase border-b border-gray-800 pb-4">Platos</h3>
+          <div className="space-y-6">
+            <div>
+              <h4 className="text-xl text-amber-500 mb-2">PAELLA MIXTA</h4>
+              <p className="text-gray-400 italic">Spanish chorizo, Manila clams, chicken, prawns, saffron broth, rice, paprika, aioli. Please allow 45-60 min.</p>
+            </div>
+            <div>
+              <h4 className="text-xl text-amber-500 mb-2">CHICKEN SHAWARMA</h4>
+              <p className="text-gray-400 italic">Shawarma style free range chicken, rice, veggies, harissa and tzatziki.</p>
+            </div>
+            <div>
+              <h4 className="text-xl text-amber-500 mb-2">LAMB TAGINE</h4>
+              <p className="text-gray-400 italic">Braised Morrocan style lamb, ras el hanout, dried apricots, veggies, rice and harissa.</p>
+            </div>
+            <div>
+              <h4 className="text-xl text-amber-500 mb-2">LOMO AL ROMESCO</h4>
+              <p className="text-gray-400 italic">Beef striploin, roasted potatoes, veggies, Romesco sauce.</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Tour de España */}
+        <div className="border border-white p-8 text-center mb-16">
+          <h3 className="text-2xl text-white mb-4">TOUR DE ESPAÑA FOR 2</h3>
+          <p className="text-gray-400">Mushroom soup, olives medley, jamon serrano, empanadas, patatas bravas, Paella mixta y crema catalana.</p>
+        </div>
+
+        {/* Hot Tapas */}
+        <div className="mb-16">
+          <h3 className="text-3xl font-light mb-8 text-white text-center uppercase border-b border-gray-800 pb-4">Hot Tapas</h3>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="space-y-6">
+              <div>
+                <h4 className="text-xl text-amber-500 mb-2">CAULIFLOWER</h4>
+                <p className="text-gray-400 italic">Roasted cauliflower, lemon juice, paprika, almonds, romesco.</p>
+              </div>
+              <div>
+                <h4 className="text-xl text-amber-500 mb-2">GAMBAS AL AJILLO</h4>
+                <p className="text-gray-400 italic">Garlic shrimp, paprika, sherry, bread.</p>
+              </div>
+              <div>
+                <h4 className="text-xl text-amber-500 mb-2">LAMB CHOPS*</h4>
+                <p className="text-gray-400 italic">Roasted potatoes, harissa sauce.</p>
+              </div>
+              <div>
+                <h4 className="text-xl text-amber-500 mb-2">CLAMS CON CHORIZO</h4>
+                <p className="text-gray-400 italic">Fresh clams, chorizo, brava sauce, bread.</p>
+              </div>
+            </div>
+            <div className="space-y-6">
+              <div>
+                <h4 className="text-xl text-amber-500 mb-2">SCALLOPS CON TOCINO</h4>
+                <p className="text-gray-400 italic">Local mushrooms, onions, cream, paprika.</p>
+              </div>
+              <div>
+                <h4 className="text-xl text-amber-500 mb-2">PATATAS BRAVAS</h4>
+                <p className="text-gray-400 italic">Roasted potatoes, brava sauce, aioli.</p>
+              </div>
+              <div>
+                <h4 className="text-xl text-amber-500 mb-2">FALAFITAS</h4>
+                <p className="text-gray-400 italic">Garbanzo patties, tzatziki.</p>
+              </div>
+              <div>
+                <h4 className="text-xl text-amber-500 mb-2">WILD MUSHROOMS CAZUELA</h4>
+                <p className="text-gray-400 italic">Fresh local wild mushrooms, garlic, sherry, served with bread.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="text-xs text-gray-500 text-center max-w-3xl mx-auto">
+          *CONSUMING RAW OR UNDERCOOKED PROTEIN DOES CREATE HIGHER RISK OF FOOD BORNE ILLNESS.
+          PLEASE BE AWARE THAT OUR FOOD MAY CONTAIN OR COME INTO CONTACT WITH COMMON ALLERGENS,
+          SUCH AS DAIRY, EGGS, WHEAT, SOYBEANS, TREE NUTS, PEANUTS, FISH, SHELLFISH OR WHEAT.
         </div>
       </div>
     </section>
