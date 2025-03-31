@@ -6,7 +6,6 @@ import { Menu } from './components/Menu';
 import { Reviews } from './components/Reviews';
 import { Map } from './components/Map';
 import { Footer } from './components/Footer';
-import { SpecialEvent } from './components/SpecialEvent';
 
 function App() {
   return (
@@ -14,7 +13,6 @@ function App() {
       <Navbar />
       <Hero />
       <div className="max-w-[1400px] mx-auto px-4">
-        <SpecialEvent />
         <Menu />
         <About />
         <Reviews />
