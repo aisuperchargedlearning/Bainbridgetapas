@@ -11,14 +11,76 @@ export const Menu = () => {
           <div className="w-16 h-[1px] bg-amber-500 mx-auto mt-8"></div>
         </div>
 
+        {/* Cocktails */}
+        <div className="mb-16">
+          <h3 className="text-3xl font-light mb-8 text-white text-center uppercase border-b border-gray-800 pb-4">Cocktails</h3>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="space-y-6">
+              <div>
+                <h4 className="text-xl text-amber-500 mb-2">SANGRIA</h4>
+                <p className="text-gray-400 italic">Red wine, maple syrup, bourbon, cider, fresh grapefruit.</p>
+              </div>
+              <div>
+                <h4 className="text-xl text-amber-500 mb-2">ANDALUCIA</h4>
+                <p className="text-gray-400 italic">Tequila, guava nectar, lime juice, triple sec rim with Tajín.</p>
+              </div>
+              <div>
+                <h4 className="text-xl text-amber-500 mb-2">JILIPOLLAS</h4>
+                <p className="text-gray-400 italic">Bourbon, orange, aromatic bitter, orange peel, smoke glass.</p>
+              </div>
+              <div>
+                <h4 className="text-xl text-amber-500 mb-2">PALOMINO</h4>
+                <p className="text-gray-400 italic">Rum, fresh pineapple, coconut purée.</p>
+              </div>
+            </div>
+            <div className="space-y-6">
+              <div>
+                <h4 className="text-xl text-amber-500 mb-2">EL GUAPO OSMARINO</h4>
+                <p className="text-gray-400 italic">Vodka, grapefruit juice, ginger beer, lime juice.</p>
+              </div>
+              <div>
+                <h4 className="text-xl text-amber-500 mb-2">TINTO DE VERANO</h4>
+                <p className="text-gray-400 italic">Whiskey, sweet vermouth, orange bitters, cherry garnish.</p>
+              </div>
+              <div>
+                <h4 className="text-xl text-amber-500 mb-2">ANCHOR NEGRONI</h4>
+                <p className="text-gray-400 italic">Campari, anchanpea tea, sweet vermouth, splash of Jäger.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Non-Alcoholic */}
+        <div className="mb-16">
+          <h3 className="text-3xl font-light mb-8 text-white text-center uppercase border-b border-gray-800 pb-4">Non-Alcoholic</h3>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="space-y-6">
+              <div>
+                <h4 className="text-xl text-amber-500 mb-2">EMILITA</h4>
+                <p className="text-gray-400 italic">Strawberry, mint, lime, simple syrup, soda water.</p>
+              </div>
+              <div>
+                <h4 className="text-xl text-amber-500 mb-2">SONJA SPRITZ</h4>
+                <p className="text-gray-400 italic">Non-alcoholic sparkling wine, orange, grapefruit, soda.</p>
+              </div>
+            </div>
+            <div className="space-y-6">
+              <div>
+                <h4 className="text-xl text-amber-500 mb-2">REBUJITO</h4>
+                <p className="text-gray-400 italic">Fresh fruit, lemon, syrup, mint, sweet and sour. (Pick flavor: pineapple / cucumber / guava)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Cold Tapas */}
         <div className="mb-16">
           <h3 className="text-3xl font-light mb-8 text-white text-center uppercase border-b border-gray-800 pb-4">Cold Tapas</h3>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="space-y-6">
               <div>
-                <h4 className="text-xl text-amber-500 mb-2">ENSALADA GRIEGA</h4>
-                <p className="text-gray-400 italic">Traditional Greek salad.</p>
+                <h4 className="text-xl text-amber-500 mb-2">SPANISH SALAD</h4>
+                <p className="text-gray-400 italic">Spring greens, sherry balsamic vinaigrette, fruit, Spanish blue cheese.</p>
               </div>
               <div>
                 <h4 className="text-xl text-amber-500 mb-2">MANCHEGO & MEMBRILLO</h4>
@@ -35,7 +97,7 @@ export const Menu = () => {
                 <p className="text-gray-400 italic">Spanish anchovies, olive oil, tomatoes, bread</p>
               </div>
               <div>
-                <h4 className="text-xl text-amber-500 mb-2">JAMON SERRANO</h4>
+                <h4 className="text-xl text-amber-500 mb-2">JAMÓN SERRANO</h4>
                 <p className="text-gray-400 italic">Fermin ham, bread, tomato pulp.</p>
               </div>
               <div>
@@ -44,68 +106,6 @@ export const Menu = () => {
               </div>
             </div>
           </div>
-        </div>
-
-        {/* Tapas Per Unit */}
-        <div className="mb-16">
-          <h3 className="text-3xl font-light mb-8 text-white text-center uppercase border-b border-gray-800 pb-4">Tapas Per Unit</h3>
-          <div className="grid grid-cols-4 mb-4">
-            <div></div>
-            <div className="text-center font-bold text-white">ONE</div>
-            <div className="text-center font-bold text-white">TWO</div>
-            <div className="text-center font-bold text-white">THREE</div>
-          </div>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="space-y-6">
-              <div>
-                <h4 className="text-xl text-amber-500 mb-2">EMPANADAS</h4>
-                <p className="text-gray-400 italic">Ground beef, four cheese, harissa.</p>
-              </div>
-              <div>
-                <h4 className="text-xl text-amber-500 mb-2">PINCHO MORUNO*</h4>
-                <p className="text-gray-400 italic">Pork skewer, blue cheese sauce.</p>
-              </div>
-            </div>
-            <div className="space-y-6">
-              <div>
-                <h4 className="text-xl text-amber-500 mb-2">SPANAKOPITA</h4>
-                <p className="text-gray-400 italic">Spinach, feta cheese, phyllo dough, tzatziki sauce.</p>
-              </div>
-              <div>
-                <h4 className="text-xl text-amber-500 mb-2">LAMB MINI PITAS</h4>
-                <p className="text-gray-400 italic">Braised lamb, onion, harissa, feta.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Platos */}
-        <div className="mb-16">
-          <h3 className="text-3xl font-light mb-8 text-white text-center uppercase border-b border-gray-800 pb-4">Platos</h3>
-          <div className="space-y-6">
-            <div>
-              <h4 className="text-xl text-amber-500 mb-2">PAELLA MIXTA</h4>
-              <p className="text-gray-400 italic">Spanish chorizo, Manila clams, chicken, prawns, saffron broth, rice, paprika, aioli. Please allow 45-60 min.</p>
-            </div>
-            <div>
-              <h4 className="text-xl text-amber-500 mb-2">CHICKEN SHAWARMA</h4>
-              <p className="text-gray-400 italic">Shawarma style free range chicken, rice, veggies, harissa and tzatziki.</p>
-            </div>
-            <div>
-              <h4 className="text-xl text-amber-500 mb-2">LAMB TAGINE</h4>
-              <p className="text-gray-400 italic">Braised Morrocan style lamb, ras el hanout, dried apricots, veggies, rice and harissa.</p>
-            </div>
-            <div>
-              <h4 className="text-xl text-amber-500 mb-2">LOMO AL ROMESCO</h4>
-              <p className="text-gray-400 italic">Beef striploin, roasted potatoes, veggies, Romesco sauce.</p>
-            </div>
-          </div>
-        </div>
-
-        {/* Tour de España */}
-        <div className="border border-white p-8 text-center mb-16">
-          <h3 className="text-2xl text-white mb-4">TOUR DE ESPAÑA FOR 2</h3>
-          <p className="text-gray-400">Mushroom soup, olives medley, jamon serrano, empanadas, patatas bravas, Paella mixta y crema catalana.</p>
         </div>
 
         {/* Hot Tapas */}
@@ -122,7 +122,7 @@ export const Menu = () => {
                 <p className="text-gray-400 italic">Garlic shrimp, paprika, sherry, bread.</p>
               </div>
               <div>
-                <h4 className="text-xl text-amber-500 mb-2">LAMB CHOPS*</h4>
+                <h4 className="text-xl text-amber-500 mb-2">LAMB CHOPS</h4>
                 <p className="text-gray-400 italic">Roasted potatoes, harissa sauce.</p>
               </div>
               <div>
@@ -133,7 +133,7 @@ export const Menu = () => {
             <div className="space-y-6">
               <div>
                 <h4 className="text-xl text-amber-500 mb-2">SCALLOPS CON TOCINO</h4>
-                <p className="text-gray-400 italic">Local mushrooms, onions, cream, paprika.</p>
+                <p className="text-gray-400 italic">Seared scallops, saffron rice, mojo verde.</p>
               </div>
               <div>
                 <h4 className="text-xl text-amber-500 mb-2">PATATAS BRAVAS</h4>
@@ -147,6 +147,79 @@ export const Menu = () => {
                 <h4 className="text-xl text-amber-500 mb-2">WILD MUSHROOMS CAZUELA</h4>
                 <p className="text-gray-400 italic">Fresh local wild mushrooms, garlic, sherry, served with bread.</p>
               </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Tapas Per Unit */}
+        <div className="mb-16">
+          <h3 className="text-3xl font-light mb-8 text-white text-center uppercase border-b border-gray-800 pb-4">Tapas Per Unit</h3>
+          <p className="text-center text-gray-400 mb-6 italic">(Choose one, two, or three)</p>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="space-y-6">
+              <div>
+                <h4 className="text-xl text-amber-500 mb-2">EMPANADAS</h4>
+                <p className="text-gray-400 italic">Ground beef, four cheese, harissa.</p>
+              </div>
+              <div>
+                <h4 className="text-xl text-amber-500 mb-2">PINCHO MORUNO</h4>
+                <p className="text-gray-400 italic">Pork skewer, blue cheese sauce.</p>
+              </div>
+            </div>
+            <div className="space-y-6">
+              <div>
+                <h4 className="text-xl text-amber-500 mb-2">SPINACH PIE</h4>
+                <p className="text-gray-400 italic">Spinach, feta cheese, phyllo dough, tzatziki sauce.</p>
+              </div>
+              <div>
+                <h4 className="text-xl text-amber-500 mb-2">LAMB MINI PITAS</h4>
+                <p className="text-gray-400 italic">Braised lamb, onion, harissa, feta.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Platos */}
+        <div className="mb-16">
+          <h3 className="text-3xl font-light mb-8 text-white text-center uppercase border-b border-gray-800 pb-4">Platos</h3>
+          <div className="space-y-6">
+            <div>
+              <h4 className="text-xl text-amber-500 mb-2">PAELLA MIXTA</h4>
+              <p className="text-gray-400 italic">Spanish chorizo, Manila clams, chicken, prawns, saffron broth, rice, paprika, aioli. (Please allow 45-60 minutes.)</p>
+            </div>
+            <div>
+              <h4 className="text-xl text-amber-500 mb-2">LAMB TAGINE</h4>
+              <p className="text-gray-400 italic">Braised Moroccan-style lamb, ras el hanout, dried apricots, veggies, rice, harissa.</p>
+            </div>
+            <div>
+              <h4 className="text-xl text-amber-500 mb-2">POLLO A LA BRAVA</h4>
+              <p className="text-gray-400 italic">Chicken, rice, vegetables, brava sauce.</p>
+            </div>
+            <div>
+              <h4 className="text-xl text-amber-500 mb-2">FRESH HALIBUT ROMESCO</h4>
+              <p className="text-gray-400 italic">Seared halibut, rice, vegetables, romesco sauce.</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Tour de España */}
+        <div className="border border-white p-8 text-center mb-16">
+          <h3 className="text-2xl text-white mb-4">TOUR DE ESPAÑA FOR TWO</h3>
+          <p className="text-gray-400">Mushroom soup, olives medley, jamón serrano, empanadas, patatas bravas, paella mixta, Basque cheesecake.</p>
+        </div>
+
+        {/* Postres */}
+        <div className="mb-16">
+          <h3 className="text-3xl font-light mb-8 text-white text-center uppercase border-b border-gray-800 pb-4">Postres</h3>
+          <div className="grid grid-cols-3 gap-8 text-center">
+            <div>
+              <h4 className="text-xl text-amber-500 mb-2">BASQUE CHEESECAKE</h4>
+            </div>
+            <div>
+              <h4 className="text-xl text-amber-500 mb-2">CHOCOLATE CAKE</h4>
+            </div>
+            <div>
+              <h4 className="text-xl text-amber-500 mb-2">GELATO</h4>
             </div>
           </div>
         </div>
