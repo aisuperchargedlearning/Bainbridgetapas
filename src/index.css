@@ -2,31 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  html {
-    -webkit-text-size-adjust: 100%;
-    text-size-adjust: 100%;
-    font-size: 16px;
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
-  
-  body {
-    @apply text-base;
-    font-family: 'Inter var', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
-    line-height: 1.5;
-  }
-
-  @media screen and (min-width: 768px) {
-    html {
-      font-size: 16px;
-    }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-@supports (-webkit-touch-callout: none) {
-  .min-h-screen {
-    min-height: -webkit-fill-available;
+.animate-fade-in {
+  animation: fade-in 1.5s ease-out forwards;
+}
+
+@keyframes fade-in-delayed {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
   }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-delayed {
+  animation: fade-in-delayed 1.8s ease-out forwards;
 }
