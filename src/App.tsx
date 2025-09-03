@@ -50,10 +50,10 @@ function App() {
     </section>
     
     {/* Menu Title Section */}
-    <section id="menu" className="py-16" style={{ backgroundColor: '#2A364A' }}>
+    <section id="menu" className="py-8" style={{ backgroundColor: '#2A364A' }}>
       <div className="max-w-4xl mx-auto px-6">
         <div className="text-center">
-          <h2 className="text-4xl md:text-6xl font-light text-white mb-8 tracking-widest" style={{ fontFamily: 'Libre Baskerville, serif' }}>
+          <h2 className="text-4xl md:text-6xl font-light text-white mb-4 tracking-widest" style={{ fontFamily: 'Libre Baskerville, serif' }}>
             MENU
           </h2>
           <div className="w-24 h-px bg-white mx-auto opacity-60"></div>
@@ -299,7 +299,7 @@ function App() {
               PORK MARSALA
             </h3>
             <p className="text-gray-300 leading-relaxed">
-              Free range chicken breast, roasted vegetables, mashed potatoes, mushrooms marsala
+              Pork, roasted vegetables, mashed potatoes, mushrooms marsala
             </p>
           </div>
           
@@ -424,9 +424,20 @@ function App() {
         </div>
         
         <div className="text-center">
-          <p className="text-gray-300 text-lg">
-            Hours information coming soon...
-          </p>
+          <div className="text-gray-300 text-lg space-y-4">
+            <div>
+              <p className="font-semibold text-white mb-2">Monday through Thursday</p>
+              <p>11AM to 2PM and 4PM to 9PM</p>
+            </div>
+            <div>
+              <p className="font-semibold text-white mb-2">Friday</p>
+              <p>11AM to 2PM and 4:30PM to 10PM</p>
+            </div>
+            <div>
+              <p className="font-semibold text-white mb-2">Saturday</p>
+              <p>4:30 to 10PM</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
