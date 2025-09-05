@@ -73,20 +73,20 @@ function App() {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="p-6 rounded-lg transition-all duration-200 hover:transform hover:scale-[1.02]" style={{ backgroundColor: '#384558' }}>
-            <h3 className="text-lg font-semibold text-white mb-3 tracking-wide" style={{ fontFamily: 'Libre Baskerville, serif' }}>
-              CAESAR SALAD
+            <h3 className="text-lg font-normal text-white mb-3 tracking-wide" style={{ fontFamily: 'Libre Baskerville, serif' }}>
+              KALE & FARRO SALAD
             </h3>
             <p className="text-gray-300 leading-relaxed">
-              Romaine, parmesan, seasoned croutons, black pepper with garlic anchovy dressing
+              Organic Bainbridge kale, farro, cucumber, tomatoes, olives, feta.
             </p>
           </div>
           
           <div className="p-6 rounded-lg transition-all duration-200 hover:transform hover:scale-[1.02]" style={{ backgroundColor: '#384558' }}>
             <h3 className="text-lg font-semibold text-white mb-3 tracking-wide" style={{ fontFamily: 'Libre Baskerville, serif' }}>
-              SALMON CHOWDER
+              CAESAR SALAD
             </h3>
             <p className="text-gray-300 leading-relaxed">
-              Seasonal salmon, mire-poix, potatoes, bread
+              Romaine, parmesan, seasoned croutons, black pepper with garlic anchovy dressing.
             </p>
           </div>
           
@@ -95,7 +95,16 @@ function App() {
               TOMATO & BURRATA
             </h3>
             <p className="text-gray-300 leading-relaxed">
-              Heirloom tomatoes, basil pesto, cucumbers, onions, olives
+              Heirloom tomatoes, basil pesto, cucumbers, onions, olives.
+            </p>
+          </div>
+          
+          <div className="p-6 rounded-lg transition-all duration-200 hover:transform hover:scale-[1.02]" style={{ backgroundColor: '#384558' }}>
+            <h3 className="text-lg font-semibold text-white mb-3 tracking-wide" style={{ fontFamily: 'Libre Baskerville, serif' }}>
+              GAZPACHO ANDALUZ
+            </h3>
+            <p className="text-gray-300 leading-relaxed">
+              Traditional Spanish tomato cold soup, served with bread.
             </p>
           </div>
           
@@ -104,7 +113,16 @@ function App() {
               ANTIPASTO PLATTER
             </h3>
             <p className="text-gray-300 leading-relaxed">
-              Serrano ham, prosciutto, marcona almonds, olives, manchego cheese, membrillo, bread
+              Assorted platter of cold cuts and cheeses with accompaniments, served with toasted bread.
+            </p>
+          </div>
+          
+          <div className="p-6 rounded-lg transition-all duration-200 hover:transform hover:scale-[1.02]" style={{ backgroundColor: '#384558' }}>
+            <h3 className="text-lg font-semibold text-white mb-3 tracking-wide" style={{ fontFamily: 'Libre Baskerville, serif' }}>
+              DIP TASTING PLATTER
+            </h3>
+            <p className="text-gray-300 leading-relaxed">
+              Home-made tzatziki, hummus, romesco, served with pita and baguette.
             </p>
           </div>
         </div>
@@ -127,52 +145,7 @@ function App() {
               CAPRESE CROSTINI
             </h3>
             <p className="text-gray-300 leading-relaxed">
-              Tomatoes, pesto, mozzarella, balsamic
-            </p>
-          </div>
-          
-          <div className="p-6 rounded-lg transition-all duration-200 hover:transform hover:scale-[1.02]" style={{ backgroundColor: '#384558' }}>
-            <h3 className="text-lg font-semibold text-white mb-3 tracking-wide" style={{ fontFamily: 'Libre Baskerville, serif' }}>
-              CAULIFLOWER
-            </h3>
-            <p className="text-gray-300 leading-relaxed">
-              Roasted cauliflower, lemon juice, paprika, almonds, romesco
-            </p>
-          </div>
-          
-          <div className="p-6 rounded-lg transition-all duration-200 hover:transform hover:scale-[1.02]" style={{ backgroundColor: '#384558' }}>
-            <h3 className="text-lg font-semibold text-white mb-3 tracking-wide" style={{ fontFamily: 'Libre Baskerville, serif' }}>
-              ARANCINI
-            </h3>
-            <p className="text-gray-300 leading-relaxed">
-              Spinach & ricotta filled risotto balls, spicy arrabiata, parmesan
-            </p>
-          </div>
-          
-          <div className="p-6 rounded-lg transition-all duration-200 hover:transform hover:scale-[1.02]" style={{ backgroundColor: '#384558' }}>
-            <h3 className="text-lg font-semibold text-white mb-3 tracking-wide" style={{ fontFamily: 'Libre Baskerville, serif' }}>
-              SPINACH PIE
-            </h3>
-            <p className="text-gray-300 leading-relaxed">
-              Spinach, feta, phyllo dough, tzatziki
-            </p>
-          </div>
-          
-          <div className="p-6 rounded-lg transition-all duration-200 hover:transform hover:scale-[1.02]" style={{ backgroundColor: '#384558' }}>
-            <h3 className="text-lg font-semibold text-white mb-3 tracking-wide" style={{ fontFamily: 'Libre Baskerville, serif' }}>
-              EMPANADAS
-            </h3>
-            <p className="text-gray-300 leading-relaxed">
-              Ground beef, four cheese, harissa
-            </p>
-          </div>
-          
-          <div className="p-6 rounded-lg transition-all duration-200 hover:transform hover:scale-[1.02]" style={{ backgroundColor: '#384558' }}>
-            <h3 className="text-lg font-semibold text-white mb-3 tracking-wide" style={{ fontFamily: 'Libre Baskerville, serif' }}>
-              TUNA CARPACCIO
-            </h3>
-            <p className="text-gray-300 leading-relaxed">
-              Fresh tuna, fennel seed, olive oil, parmesan
+              Tomatoes, basil pesto, creamy mozzarella, balsamic.
             </p>
           </div>
           
@@ -181,16 +154,34 @@ function App() {
               MANILA CLAMS
             </h3>
             <p className="text-gray-300 leading-relaxed">
-              Fresh clams, brava sauce, bread
+              Fresh clams, brava sauce, bread.
             </p>
           </div>
           
           <div className="p-6 rounded-lg transition-all duration-200 hover:transform hover:scale-[1.02]" style={{ backgroundColor: '#384558' }}>
             <h3 className="text-lg font-semibold text-white mb-3 tracking-wide" style={{ fontFamily: 'Libre Baskerville, serif' }}>
-              SALMON CANAPE
+              ARANCINI
             </h3>
             <p className="text-gray-300 leading-relaxed">
-              Seasonal salmon, mascarpone, bread
+              Spinach & ricotta filled risotto balls, spicy arrabbiata, parmesan.
+            </p>
+          </div>
+          
+          <div className="p-6 rounded-lg transition-all duration-200 hover:transform hover:scale-[1.02]" style={{ backgroundColor: '#384558' }}>
+            <h3 className="text-lg font-semibold text-white mb-3 tracking-wide" style={{ fontFamily: 'Libre Baskerville, serif' }}>
+              SPINACH PIE
+            </h3>
+            <p className="text-gray-300 leading-relaxed">
+              Spinach, feta, phyllo dough, tzatziki.
+            </p>
+          </div>
+          
+          <div className="p-6 rounded-lg transition-all duration-200 hover:transform hover:scale-[1.02]" style={{ backgroundColor: '#384558' }}>
+            <h3 className="text-lg font-semibold text-white mb-3 tracking-wide" style={{ fontFamily: 'Libre Baskerville, serif' }}>
+              MEDITERRANEAN SCALLOPS
+            </h3>
+            <p className="text-gray-300 leading-relaxed">
+              Seared scallops, creamy garlic sauce, olives and feta, mini pitas.
             </p>
           </div>
           
@@ -199,7 +190,16 @@ function App() {
               GAMBAS AL AJILLO
             </h3>
             <p className="text-gray-300 leading-relaxed">
-              Garlic shrimp, paprika, sherry, bread
+              Garlic shrimp, paprika, sherry, bread.
+            </p>
+          </div>
+          
+          <div className="p-6 rounded-lg transition-all duration-200 hover:transform hover:scale-[1.02]" style={{ backgroundColor: '#384558' }}>
+            <h3 className="text-lg font-semibold text-white mb-3 tracking-wide" style={{ fontFamily: 'Libre Baskerville, serif' }}>
+              EMPANADAS
+            </h3>
+            <p className="text-gray-300 leading-relaxed">
+              Ground beef, four cheese, harissa.
             </p>
           </div>
           
@@ -208,7 +208,66 @@ function App() {
               WILD MUSHROOMS CAZUELA
             </h3>
             <p className="text-gray-300 leading-relaxed">
-              Fresh local wild mushrooms, garlic, sherry, served with bread
+              Fresh local wild mushrooms, garlic, sherry, served with bread.
+            </p>
+          </div>
+          
+          <div className="p-6 rounded-lg transition-all duration-200 hover:transform hover:scale-[1.02]" style={{ backgroundColor: '#384558' }}>
+            <h3 className="text-lg font-semibold text-white mb-3 tracking-wide" style={{ fontFamily: 'Libre Baskerville, serif' }}>
+              CAULIFLOWER
+            </h3>
+            <p className="text-gray-300 leading-relaxed">
+              Roasted cauliflower, lemon juice, paprika, almonds, romesco.
+            </p>
+          </div>
+          
+          <div className="p-6 rounded-lg transition-all duration-200 hover:transform hover:scale-[1.02]" style={{ backgroundColor: '#384558' }}>
+            <h3 className="text-lg font-semibold text-white mb-3 tracking-wide" style={{ fontFamily: 'Libre Baskerville, serif' }}>
+              SALMON CANAPE
+            </h3>
+            <p className="text-gray-300 leading-relaxed">
+              Seasonal salmon, mascarpone, dill, bread.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* Flatbreads Menu Section */}
+    <section className="py-16" style={{ backgroundColor: '#2A364A' }}>
+      <div className="max-w-4xl mx-auto px-6">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-light text-white mb-6 tracking-widest" style={{ fontFamily: 'Libre Baskerville, serif' }}>
+            FLATBREADS
+          </h2>
+          <div className="w-16 h-0.5 mx-auto" style={{ backgroundColor: '#d4af37' }}></div>
+        </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="p-6 rounded-lg transition-all duration-200 hover:transform hover:scale-[1.02]" style={{ backgroundColor: '#384558' }}>
+            <h3 className="text-lg font-semibold text-white mb-3 tracking-wide" style={{ fontFamily: 'Libre Baskerville, serif' }}>
+              CAPRESE
+            </h3>
+            <p className="text-gray-300 leading-relaxed">
+              Fresh mozzarella, basil pesto, tomatoes, balsamic.
+            </p>
+          </div>
+          
+          <div className="p-6 rounded-lg transition-all duration-200 hover:transform hover:scale-[1.02]" style={{ backgroundColor: '#384558' }}>
+            <h3 className="text-lg font-semibold text-white mb-3 tracking-wide" style={{ fontFamily: 'Libre Baskerville, serif' }}>
+              STEAK GORGONZOLA
+            </h3>
+            <p className="text-gray-300 leading-relaxed">
+              Sliced grilled steak, gorgonzola, red onions, mushrooms.
+            </p>
+          </div>
+          
+          <div className="p-6 rounded-lg transition-all duration-200 hover:transform hover:scale-[1.02]" style={{ backgroundColor: '#384558' }}>
+            <h3 className="text-lg font-semibold text-white mb-3 tracking-wide" style={{ fontFamily: 'Libre Baskerville, serif' }}>
+              CHICKEN HARISSA
+            </h3>
+            <p className="text-gray-300 leading-relaxed">
+              Free range chicken, harissa, onions, feta.
             </p>
           </div>
         </div>
@@ -228,19 +287,19 @@ function App() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="p-6 rounded-lg transition-all duration-200 hover:transform hover:scale-[1.02]" style={{ backgroundColor: '#384558' }}>
             <h3 className="text-lg font-semibold text-white mb-3 tracking-wide" style={{ fontFamily: 'Libre Baskerville, serif' }}>
-              PRAWN DIABLO
+              TAGLIATELLE DI MARE
             </h3>
             <p className="text-gray-300 leading-relaxed">
-              Cherry tomatoes, onions, garlic, basil, arrabiata, parmesan
+              Manila clams, shrimp, scallops, tomatoes, onions, garlic, basil pesto, parmesan.
             </p>
           </div>
           
           <div className="p-6 rounded-lg transition-all duration-200 hover:transform hover:scale-[1.02]" style={{ backgroundColor: '#384558' }}>
             <h3 className="text-lg font-semibold text-white mb-3 tracking-wide" style={{ fontFamily: 'Libre Baskerville, serif' }}>
-              LEMON CHICKEN CAPELLINI
+              LEMON CHICK CAPELLINI
             </h3>
             <p className="text-gray-300 leading-relaxed">
-              Asparagus, tomatoes, onions, olives, lemon mascarpone sauce, pecorino
+              Asparagus, tomatoes, onions, olives, lemon mascarpone sauce, pecorino.
             </p>
           </div>
           
@@ -249,7 +308,7 @@ function App() {
               RAGU DI AGNELLO
             </h3>
             <p className="text-gray-300 leading-relaxed">
-              Braised lamb, red pepper pappardelle, ricotta cheese
+              Braised lamb, red pepper pappardelle, ricotta cheese.
             </p>
           </div>
           
@@ -258,7 +317,7 @@ function App() {
               WILD MUSHROOM RAVIOLI
             </h3>
             <p className="text-gray-300 leading-relaxed">
-              Wild mushrooms, onions, tomatoes, garlic, basil, roasted tomato sauce, gorgonzola
+              Wild mushrooms, onions, tomatoes, garlic, basil, roasted tomato sauce, gorgonzola.
             </p>
           </div>
         </div>
@@ -281,7 +340,7 @@ function App() {
               VEAL CHOP
             </h3>
             <p className="text-gray-300 leading-relaxed">
-              16 oz. Steak, roasted potatoes, vegetables, gremolata
+              16 oz. bone-in Steak, roasted potatoes, vegetables, gremolata.
             </p>
           </div>
           
@@ -290,7 +349,7 @@ function App() {
               BISTECCA ALLA GORGONZOLA
             </h3>
             <p className="text-gray-300 leading-relaxed">
-              8 oz Flat Iron, roasted potatoes, vegetables, gorgonzola sauce
+              8 oz Flat Iron, roasted potatoes, vegetables, gorgonzola sauce.
             </p>
           </div>
           
@@ -299,7 +358,7 @@ function App() {
               PORK MARSALA
             </h3>
             <p className="text-gray-300 leading-relaxed">
-              Pork, roasted vegetables, mashed potatoes, mushrooms marsala
+              Pork tenderloin, roasted vegetables, mashed potatoes, mushrooms marsala.
             </p>
           </div>
           
@@ -308,7 +367,7 @@ function App() {
               SEARED HALIBUT
             </h3>
             <p className="text-gray-300 leading-relaxed">
-              Wild-caught Halibut, veggies, farro, saffron cream sauce, parmesan
+              Wild-caught Halibut, veggies, rice, saffron cream sauce, parmesan.
             </p>
           </div>
           
@@ -317,7 +376,7 @@ function App() {
               LOBSTER RISOTTO
             </h3>
             <p className="text-gray-300 leading-relaxed">
-              Maine lobster tail, shrimp, asparagus, diced carrots, tomatoes, onions, parmesan
+              Maine lobster tail, shrimp, asparagus, diced carrots, tomatoes, onions, parmesan.
             </p>
           </div>
           
@@ -326,28 +385,19 @@ function App() {
               BOUILLABAISSE
             </h3>
             <p className="text-gray-300 leading-relaxed">
-              Fresh seafood, mire-poix, fennel, saffron, aioli, bread
-            </p>
-          </div>
-          
-          <div className="p-6 rounded-lg transition-all duration-200 hover:transform hover:scale-[1.02]" style={{ backgroundColor: '#384558' }}>
-            <h3 className="text-lg font-semibold text-white mb-3 tracking-wide" style={{ fontFamily: 'Libre Baskerville, serif' }}>
-              SEARED SCALLOPS
-            </h3>
-            <p className="text-gray-300 leading-relaxed">
-              Prosciutto wrapped scallops, mashed potatoes, veggies, romesco sauce
+              Fresh clams, scallops, fish, prawns, mirepoix, fennel, saffron, aioli, bread.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    {/* Dolci Menu Section */}
+    {/* Dessert Menu Section */}
     <section className="py-16" style={{ backgroundColor: '#2A364A' }}>
       <div className="max-w-4xl mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-light text-white mb-6 tracking-widest" style={{ fontFamily: 'Libre Baskerville, serif' }}>
-            DOLCI
+            DESSERT
           </h2>
           <div className="w-16 h-0.5 mx-auto" style={{ backgroundColor: '#d4af37' }}></div>
         </div>
@@ -358,16 +408,7 @@ function App() {
               PISTACHIO CHEESECAKE
             </h3>
             <p className="text-gray-300 leading-relaxed">
-              Ricotta cheese, pistachio cream, berries compote
-            </p>
-          </div>
-          
-          <div className="p-6 rounded-lg transition-all duration-200 hover:transform hover:scale-[1.02]" style={{ backgroundColor: '#384558' }}>
-            <h3 className="text-lg font-semibold text-white mb-3 tracking-wide" style={{ fontFamily: 'Libre Baskerville, serif' }}>
-              TIRAMISU
-            </h3>
-            <p className="text-gray-300 leading-relaxed">
-              Espresso-soaked lady fingers layered with cocoa and sweet Italian mascarpone
+              Ricotta cheese, pistachio cream, berries compote.
             </p>
           </div>
           
@@ -376,7 +417,16 @@ function App() {
               GELATO & SORBETTO
             </h3>
             <p className="text-gray-300 leading-relaxed">
-              Vanilla, pistachio, salted caramel, vegan gelato and mango sorbetto
+              Vanilla, pistachio, salted caramel, Vegan gelato and Mango sorbetto.
+            </p>
+          </div>
+          
+          <div className="p-6 rounded-lg transition-all duration-200 hover:transform hover:scale-[1.02]" style={{ backgroundColor: '#384558' }}>
+            <h3 className="text-lg font-semibold text-white mb-3 tracking-wide" style={{ fontFamily: 'Libre Baskerville, serif' }}>
+              TIRAMISU
+            </h3>
+            <p className="text-gray-300 leading-relaxed">
+              Espresso-soaked lady fingers layered with mascarpone.
             </p>
           </div>
           
@@ -385,9 +435,20 @@ function App() {
               BASQUE CHEESECAKE
             </h3>
             <p className="text-gray-300 leading-relaxed">
-              Gluten free Spanish cheese cake, berries compote
+              Gluten free Spanish cheese cake, berries compote.
             </p>
           </div>
+        </div>
+      </div>
+    </section>
+
+    {/* Menu Disclaimer Section */}
+    <section className="py-8" style={{ backgroundColor: '#2A364A' }}>
+      <div className="max-w-4xl mx-auto px-6">
+        <div className="p-6 rounded-lg" style={{ backgroundColor: 'rgba(255,255,255,0.1)' }}>
+          <p className="text-gray-300 text-sm text-center leading-relaxed">
+            <strong className="text-white">*</strong> Consuming raw or undercooked meats, poultry, seafood, shellfish, or eggs may increase your risk of food borne illness. <strong className="text-white">*</strong> Automatic gratuity 20% gratuity will be added to parties of 6+. Please be aware that our food may contain or come into contact with common allergens, such as dairy, eggs, soybeans, tree nuts, peanuts, fish, shellfish or wheat. <strong className="text-white">Corkage fee $20.</strong>
+          </p>
         </div>
       </div>
     </section>
