@@ -38,7 +38,7 @@ const CollapsibleMenu = () => {
   const menuData: MenuSection[] = [
     {
       title: 'Dinner Menu',
-      time: 'Served 4:00 PM - 10:00 PM',
+      time: '',
       categories: [
         {
           title: 'ANTIPASTO',
@@ -206,7 +206,7 @@ const CollapsibleMenu = () => {
     },
     {
       title: 'Lunch Menu',
-      time: 'Served 11:00 AM - 3:00 PM',
+      time: '',
       categories: [
         {
           title: 'ANTIPASTO',
