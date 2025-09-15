@@ -86,7 +86,7 @@ function App() {
         <div className="text-center">
           <div className="text-gray-300 text-lg space-y-4">
             <div>
-              <p className="font-semibold text-white mb-2">Monday through Thursday</p>
+              <p className="font-semibold text-white mb-2">Tuesday through Thursday</p>
               <p>11AM to 2PM and 4PM to 9PM</p>
             </div>
             <div>
