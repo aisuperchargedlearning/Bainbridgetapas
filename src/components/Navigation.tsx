@@ -5,11 +5,10 @@ const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const menuItems = [
-    'Specialties',
+    'Menu',
     'Reservations',
     'Contact',
     'Hours',
-    'Menu'
   ];
 
   return (
@@ -29,7 +28,7 @@ const Navigation = () => {
               {menuItems.map((item) => (
                 <a
                   key={item}
-                  href={item === 'Specialties' ? '#specialties' : item === 'Menu' ? '#menu' : item === 'Reservations' ? '#contact' : `#${item.toLowerCase()}`}
+                  href={item === 'Menu' ? '#menu' : item === 'Reservations' ? '#contact' : `#${item.toLowerCase()}`}
                   className="text-white hover:text-gray-300 px-3 py-2 text-xs font-light tracking-wider transition-colors duration-200"
                 >
                   {item}
@@ -57,7 +56,7 @@ const Navigation = () => {
             {menuItems.map((item) => (
               <a
                 key={item}
-                href={item === 'Specialties' ? '#specialties' : item === 'Menu' ? '#menu' : item === 'Reservations' ? '#contact' : `#${item.toLowerCase()}`}
+                href={item === 'Menu' ? '#menu' : item === 'Reservations' ? '#contact' : `#${item.toLowerCase()}`}
                 className="text-white hover:text-gray-300 block px-3 py-2 text-sm font-light tracking-wider transition-colors duration-200"
                 onClick={() => setIsMenuOpen(false)}
               >

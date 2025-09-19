@@ -115,23 +115,6 @@ const CollapsibleMenu = () => {
           ]
         },
         {
-          title: 'FLATBREADS',
-          items: [
-            {
-              name: 'CAPRESE',
-              description: 'Fresh mozzarella, basil pesto, tomatoes, balsamic.'
-            },
-            {
-              name: 'STEAK GORGONZOLA',
-              description: 'Sliced grilled steak, gorgonzola, red onions, mushrooms.'
-            },
-            {
-              name: 'CHICKEN HARISSA',
-              description: 'Free range chicken, harissa, onions, feta.'
-            }
-          ]
-        },
-        {
           title: 'FRESH PASTA',
           items: [
             {
