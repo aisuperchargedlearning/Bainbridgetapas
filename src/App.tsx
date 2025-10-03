@@ -6,14 +6,34 @@ function App() {
   return (
     <>
     <Navigation />
-    <div className="min-h-screen bg-slate-900" style={{ backgroundColor: '#0A0E1A' }}>
+    <div className="relative min-h-screen bg-slate-900 overflow-hidden" style={{ backgroundColor: '#0A0E1A' }}>
+      {/* Video Background */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover opacity-0 animate-fade-in"
+      >
+        <source src="https://ik.imagekit.io/a7tech/Bainbridge%20Bistro/Tagliatelle%20De%20Mare.mp4?updatedAt=1759507820762" type="video/mp4" />
+      </video>
+
+      {/* Overlay for better text readability if needed */}
+      <div className="absolute inset-0 bg-black opacity-20"></div>
+
       {/* Hero Content */}
-      <div className="flex items-center justify-center min-h-screen">
-        <img 
+      <div className="relative min-h-screen">
+        <img
           src="https://ik.imagekit.io/a7tech/Bainbridge%20Bistro/Bainbridgebistrologo.jpg?updatedAt=1756830222667"
           alt="Bainbridge Bistro Logo"
-          className="w-full h-full object-cover opacity-0 animate-fade-in"
+          className="absolute top-16 left-6 w-24 h-24 object-contain opacity-0 animate-fade-in"
+          style={{ animationDelay: '0.5s' }}
         />
+        <div className="absolute bottom-12 left-0 right-0 text-center">
+          <p className="text-white text-2xl md:text-3xl font-light tracking-wide opacity-0 animate-fade-in" style={{ animationDelay: '3s' }}>
+            Tagliatelle ai frutti di mare
+          </p>
+        </div>
       </div>
     </div>
 
